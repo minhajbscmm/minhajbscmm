@@ -1,0 +1,388 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyMf2/Ayem7TiC4OdQLA5DTO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/minhajbscmm/minhajbscmm/blob/main/python%20machaaa\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# prompt: print a mark sheet\n",
+        "\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"Name: John Doe\")\n",
+        "print(\"Roll No.: 12345\")\n",
+        "print(\"Class: 10th\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"Subject\\t\\tMarks\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"English\\t\\t95\")\n",
+        "print(\"Mathematics\\t85\")\n",
+        "print(\"Science\\t\\t90\")\n",
+        "print(\"Social Studies\\t80\")\n",
+        "print(\"Hindi\\t\\t75\")\n",
+        "print(\"-----------------------------------------------------------------\")\n",
+        "print(\"Total Marks:\\t425\")\n",
+        "print(\"Percentage:\\t85%\")\n",
+        "print(\"Grade:\\tA+\")\n",
+        "print(\"-----------------------------------------------------------------\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YbV2cwkBBznP",
+        "outputId": "318b2c46-61f1-475f-94f9-8b76cba85fe8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-----------------------------------------------------------------\n",
+            "Name: John Doe\n",
+            "Roll No.: 12345\n",
+            "Class: 10th\n",
+            "-----------------------------------------------------------------\n",
+            "Subject\t\tMarks\n",
+            "-----------------------------------------------------------------\n",
+            "English\t\t95\n",
+            "Mathematics\t85\n",
+            "Science\t\t90\n",
+            "Social Studies\t80\n",
+            "Hindi\t\t75\n",
+            "-----------------------------------------------------------------\n",
+            "Total Marks:\t425\n",
+            "Percentage:\t85%\n",
+            "Grade:\tA+\n",
+            "-----------------------------------------------------------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "print(a+b)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gDFDxyFEE_0X",
+        "outputId": "14612ffa-16e3-4248-c613-0794faab5e6f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n",
+            "6\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input(\"enter the first number:\"))\n",
+        "b=int(input(\"enter the second the number:\"))\n",
+        "\n",
+        "if a<b:\n",
+        "  print(\"first number is less than second\")\n",
+        "elif a>b:\n",
+        "  print(\"first number is greater than second\")\n",
+        "else :\n",
+        "  print(f\"first number is equal to second\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D77DaMzNDy00",
+        "outputId": "32a5546e-5d19-4f99-dc5b-8e384d47d038"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number:52\n",
+            "enter the second the number:66\n",
+            "first number is less than second\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "smnL1fMGK1FK",
+        "outputId": "786e80dc-26ba-4459-9c8a-739f6c07afea"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "multiplication table for 5 :\n",
+            "5*1=5\n",
+            "5*2=10\n",
+            "5*3=15\n",
+            "5*4=20\n",
+            "5*5=25\n",
+            "5*6=30\n",
+            "5*7=35\n",
+            "5*8=40\n",
+            "5*9=45\n",
+            "5*10=50\n"
+          ]
+        }
+      ],
+      "source": [
+        "number =int(input())\n",
+        "\n",
+        "print(\"multiplication table for\",number,\":\")\n",
+        "for i in range (1,11):\n",
+        "   result = number*i\n",
+        "   print(f\"{number}*{i}={result}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def addition(a,b):\n",
+        "  print(f\"sum of{a},{b}=\",a+b)\n",
+        "\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "\n",
+        "addition(a,b)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "isMhVei6Mqsi",
+        "outputId": "890c8489-7118-490e-d11f-3681893c8eab"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "2\n",
+            "sum of5,2= 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "155oyDZXBTeE",
+        "outputId": "86d9454a-f6f6-456e-d23b-01e5ae01ba91"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=6\n",
+        "b=5\n",
+        "print(a+b)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def factorial(n):\n",
+        "   if n==0:\n",
+        "    return 1;\n",
+        "\n",
+        "   result = 1\n",
+        "   for i in range(1, n+1):\n",
+        "    result *=i\n",
+        "   return result\n",
+        "\n",
+        "factorial(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cMzw8Tp4cAlQ",
+        "outputId": "e23df51e-1c86-4bfe-dcd9-c76e3a866a23"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "120"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "+def subtraction(a,b):\n",
+        "   print(f\"difference of{a},{b}=\",a-b)\n",
+        "\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "\n",
+        "subtraction (a,b)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wd2MdxB6d5Es",
+        "outputId": "efe00c49-d59e-4ced-878e-69ce4899ec24"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "32\n",
+            "difference of5,32= -27\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def factorial(n):\n",
+        "  if n== 0:\n",
+        "    return 1\n",
+        "  else:\n",
+        "    return n*factorial(n-1)\n",
+        "\n",
+        "factorial (10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h-EZQ4vhh0ot",
+        "outputId": "2b849fd6-c788-459e-a979-766b01d62cab"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3628800"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def palindrome(word):\n",
+        "\n",
+        "#convert the word to lowercase for case-insestive camparison\n",
+        " word=word.lower()\n",
+        " reversed_word = word[::-1]\n",
+        " if word == reversed_word:\n",
+        "  print(\"the word is a palimdrome\")\n",
+        " else:\n",
+        "   print(\"the word is not a palindrome\")\n",
+        "\n",
+        "\n",
+        "palindrome (\"subair\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jSqV2F3IzrzD",
+        "outputId": "c1f8ce31-1fd6-4a0d-d06a-e11535ea8ffc"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the word is not a palindrome\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "WSsv5yqv7W8X"
+      },
+      "execution_count": 45,
+      "outputs": []
+    }
+  ]
+}
